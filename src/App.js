@@ -1,6 +1,8 @@
 // src/App.js
 import React from 'react';
 import Logo from './components/Logo';
+import Navbar from './components/Navbar';
+
 import './App.css';
 
 function App() {
