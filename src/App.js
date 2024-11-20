@@ -1,7 +1,7 @@
 // src/App.js
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar'; // Importa el nuevo componente Navbar
 
 function App() {
   // Estado para manejar la página activa
@@ -62,12 +62,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <nav className="App-navbar">
-          <button onClick={() => navigate('home')}>Inicio</button>
-          <button onClick={() => navigate('catalog')}>Catálogo</button>
-          <button onClick={() => navigate('contact')}>Contacto</button>
-        </nav>
+        {/* Logo eliminado */}
+        <Navbar onNavigate={navigate} /> {/* Usando el nuevo componente Navbar */}
         <div className="App-content">
           {renderContent()}
         </div>
