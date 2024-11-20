@@ -1,7 +1,7 @@
 // src/App.js
 import React, { useState } from 'react';
+import Navbar from './components/Navbar';
 import './App.css';
-import Navbar from './components/Navbar'; // Importa el nuevo componente Navbar
 
 function App() {
   // Estado para manejar la página activa
@@ -61,13 +61,10 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        {/* Logo eliminado */}
-        <Navbar onNavigate={navigate} /> {/* Usando el nuevo componente Navbar */}
-        <div className="App-content">
-          {renderContent()}
-        </div>
-      </header>
+      <Navbar onNavigate={navigate} />
+      <div className="App-content">
+        {renderContent()}
+      </div>
     </div>
   );
 }
