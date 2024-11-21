@@ -7,3 +7,5 @@ function Logo() {
     <h1 className="display-4">Tu Leyenda</h1>
   );
 }
+
+export default Logo;
