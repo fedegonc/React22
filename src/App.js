@@ -2,14 +2,14 @@
 import React from 'react';
 import Logo from './components/Logo';
 import Navbar from './components/Navbar';
-
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Logo />
+        <Navbar />  // Renderiza la barra de navegación en la parte superior del encabezado
+        <Logo />    // Muestra el logo de "Tu Leyenda" justo debajo del Navbar
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -27,4 +27,3 @@ function App() {
 }
 
 export default App;
-
