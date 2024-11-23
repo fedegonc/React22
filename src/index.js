@@ -11,20 +11,3 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// src/index.css
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 15px;
-}
-
-nav li a {
-  text-decoration: none;
-  color: black;
-}
-
-nav li.active a {
-  font-weight: bold;
-  color: blue;
-} 
